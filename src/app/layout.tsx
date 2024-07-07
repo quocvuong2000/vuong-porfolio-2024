@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { JetBrains_Mono } from 'next/font/google';
+import './globals.css';
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+const jetBrain = JetBrains_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['300', '400', '500', '600', '700'],
 });
 export const metadata: Metadata = {
-  title: "Vuong porfolio",
-  description: "",
+  title: 'Vuong porfolio',
+  description: '',
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={jetBrain.className}>{children}</body>
     </html>
   );
 }

@@ -1,11 +1,10 @@
-import Hero from "@vguno/containers/LandingPage/Hero";
-import Navbar from "@vguno/containers/LandingPage/Menu";
+import Layout from '@vguno/components/Layout';
+import PageContainer from '@vguno/components/PageContainer';
 
 export default function Home() {
   return (
-    <main id="showcase">
-      <Navbar />
-      <Hero />
-    </main>
+    <Layout>
+      <PageContainer>Content</PageContainer>
+    </Layout>
   );
 }
